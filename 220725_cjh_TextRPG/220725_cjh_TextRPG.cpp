@@ -15,13 +15,13 @@ int MonsterEX = 15;
 
 void Status(int Hp, int Att, bool _PM)
 {
-    if (_PM)
+    if (_PM) //true 면 플레이어
     {
         printf_s("----------------P L A Y E R----------------\n");
         printf_s("Hp %d\tAtt %d\t\t\tExp %d\n", Hp, Att, PlayerEXP);
         printf_s("-------------------------------------------\n");
     }
-    else
+    else //false 면 몬스터
     {
         printf_s("---------------M O N S T E R---------------\n");
         printf_s("Hp %d\tAtt %d\n", Hp, Att);
